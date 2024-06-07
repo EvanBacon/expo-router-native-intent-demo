@@ -1,9 +1,6 @@
-import { StatusBar } from "expo-status-bar";
-import { Image, Platform, StyleSheet } from "react-native";
-
-import EditScreenInfo from "@/components/EditScreenInfo";
 import { Text, View } from "@/components/Themed";
 import { useLocalSearchParams } from "expo-router";
+import { Image, StyleSheet } from "react-native";
 
 export default function ModalScreen() {
   const { file } = useLocalSearchParams();
@@ -22,12 +19,14 @@ export default function ModalScreen() {
       {file && (
         <Image
           source={{ uri: file }}
-          style={{ backgroundColor: "blue", width: 200, height: 200 }}
+          style={{
+            backgroundColor: "blue",
+            borderRadius: 12,
+            width: 200,
+            height: 200,
+          }}
         />
       )}
-
-      {/* Use a light status bar on iOS to account for the black space above the modal */}
-      <StatusBar style={Platform.OS === "ios" ? "light" : "auto"} />
     </View>
   );
 }

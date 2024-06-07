@@ -4,6 +4,7 @@ import { StyleSheet } from "react-native";
 import { Text, View } from "@/components/Themed";
 
 export default function NotFoundScreen() {
+  // file://Users/evanbacon/Library/Developer/CoreSimulator/Devices/9B01E470-2A96-4C4B-8E7C-8A2141EB54AB/data/Containers/Data/Application/8C840AB3-70AD-40D8-82DA-2CA61D1C01F4/tmp/com.bacon.jun8-Inbox/RPReplay_Final1714081844-C9957061-4E8D-4181-BAD3-6786618BF5D3.MP4
   const pathname = usePathname();
   console.log("file", pathname);
   return (
