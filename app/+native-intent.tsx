@@ -1,4 +1,4 @@
-export function redirectSystemPath({
+export async function redirectSystemPath({
   path,
   initial,
 }: {
@@ -8,7 +8,7 @@ export function redirectSystemPath({
   console.log("redirectSystemPath", path, initial);
 
   if (path.startsWith("file://")) {
-    return "/modal?file=" + path;
+    return "/modal?file=" + encodeURIComponent(path);
   }
 
   return path;

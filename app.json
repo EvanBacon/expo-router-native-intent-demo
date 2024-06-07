@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "jun8",
+    "name": "Native Intent",
     "slug": "jun8",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "icon": "https://icogen.vercel.app/api/icon?icon=🧭",
+    "scheme": "native-intent",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
