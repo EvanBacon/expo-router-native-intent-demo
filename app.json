@@ -27,9 +27,6 @@
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
-    "plugins": ["expo-router", "./withImageImport.js"],
-    "experiments": {
-      "typedRoutes": true
-    }
+    "plugins": ["./withImageImport.js"]
   }
 }

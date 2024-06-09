@@ -1,8 +1,6 @@
-import { Share, Image, StyleSheet } from "react-native";
+import { Text, View, Share, Image, StyleSheet } from "react-native";
 
 import TouchableBounce from "react-native/Libraries/Components/Touchable/TouchableBounce";
-
-import { Text, View } from "@/components/Themed";
 
 import { Asset } from "expo-asset";
 
@@ -12,13 +10,21 @@ export default function TabOneScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>
-        Go to a Photo in files and press Share {">"} Open In {">"} This App
+        Go to a Photo in files and press{" "}
+        <Text style={{ fontSize: 16, fontWeight: "medium", opacity: 0.8 }}>
+          {"\n"}
+          Share {">"} Open In {">"} This App
+        </Text>
       </Text>
 
+      <View />
+
+      <Text style={{ fontSize: 16, fontWeight: "medium", opacity: 0.8 }}>
+        Or tap this photo to share it to this app
+      </Text>
       <TouchableBounce
         onPress={async () => {
           Share.share({
-            message: "hey",
             url: (await Asset.fromModule(DEMO_IMAGE).downloadAsync()).localUri!,
           });
         }}
@@ -37,15 +43,11 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    gap: 8,
+    gap: 12,
   },
   title: {
     fontSize: 20,
     fontWeight: "bold",
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: "80%",
+    textAlign: "center",
   },
 });
