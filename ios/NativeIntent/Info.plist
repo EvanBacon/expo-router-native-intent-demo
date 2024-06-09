@@ -25,6 +25,21 @@
           <string>public.image</string>
         </array>
       </dict>
+      <dict>
+        <key>CFBundleTypeName</key>
+        <string>Image</string>
+        <key>LSHandlerRank</key>
+        <string>Owner</string>
+        <key>LSItemContentTypes</key>
+        <array>
+          <string>com.bacon.jun8.jpeg</string>
+          <string>com.bacon.jun8.png</string>
+          <string>com.bacon.jun8.gif</string>
+          <string>com.bacon.jun8.heic</string>
+          <string>com.bacon.jun8.avif</string>
+          <string>public.image</string>
+        </array>
+      </dict>
     </array>
     <key>CFBundleExecutable</key>
     <string>$(EXECUTABLE_NAME)</string>
@@ -61,6 +76,10 @@
       <key>NSAllowsLocalNetworking</key>
       <true/>
     </dict>
+    <key>NSCameraUsageDescription</key>
+    <string>Allow $(PRODUCT_NAME) to access your camera</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Allow $(PRODUCT_NAME) to access your microphone</string>
     <key>NSPhotoLibraryUsageDescription</key>
     <string>Allow $(PRODUCT_NAME) to access your photos</string>
     <key>NSUserActivityTypes</key>
@@ -68,12 +87,6 @@
       <string>$(PRODUCT_BUNDLE_IDENTIFIER).expo.index_route</string>
       <string>$(PRODUCT_BUNDLE_IDENTIFIER).expo.index_route</string>
       <string>$(PRODUCT_BUNDLE_IDENTIFIER).expo.index_route</string>
-      <string>$(PRODUCT_BUNDLE_IDENTIFIER).expo.index_route</string>
-      <string>$(PRODUCT_BUNDLE_IDENTIFIER).expo.index_route</string>
-    </array>
-    <key>UIBackgroundModes</key>
-    <array>
-      <string>audio</string>
     </array>
     <key>UILaunchStoryboardName</key>
     <string>SplashScreen</string>
@@ -206,6 +219,134 @@
           <key>public.mime-type</key>
           <array>
             <string>image/avif</string>
+          </array>
+        </dict>
+      </dict>
+      <dict>
+        <key>UTTypeIdentifier</key>
+        <string>com.bacon.jun8.jpeg</string>
+        <key>UTTypeConformsTo</key>
+        <array>
+          <string>public.image</string>
+        </array>
+        <key>UTTypeDescription</key>
+        <string>JPEG Image</string>
+        <key>UTTypeTagSpecification</key>
+        <dict>
+          <key>public.filename-extension</key>
+          <array>
+            <string>jpg</string>
+            <string>jpeg</string>
+          </array>
+          <key>public.mime-type</key>
+          <array>
+            <string>image/jpeg</string>
+          </array>
+        </dict>
+      </dict>
+      <dict>
+        <key>UTTypeIdentifier</key>
+        <string>com.bacon.jun8.png</string>
+        <key>UTTypeConformsTo</key>
+        <array>
+          <string>public.image</string>
+        </array>
+        <key>UTTypeDescription</key>
+        <string>PNG Image</string>
+        <key>UTTypeTagSpecification</key>
+        <dict>
+          <key>public.filename-extension</key>
+          <array>
+            <string>png</string>
+          </array>
+          <key>public.mime-type</key>
+          <array>
+            <string>image/png</string>
+          </array>
+        </dict>
+      </dict>
+      <dict>
+        <key>UTTypeIdentifier</key>
+        <string>com.bacon.jun8.gif</string>
+        <key>UTTypeConformsTo</key>
+        <array>
+          <string>public.image</string>
+        </array>
+        <key>UTTypeDescription</key>
+        <string>GIF Image</string>
+        <key>UTTypeTagSpecification</key>
+        <dict>
+          <key>public.filename-extension</key>
+          <array>
+            <string>gif</string>
+          </array>
+          <key>public.mime-type</key>
+          <array>
+            <string>image/gif</string>
+          </array>
+        </dict>
+      </dict>
+      <dict>
+        <key>UTTypeIdentifier</key>
+        <string>com.bacon.jun8.heic</string>
+        <key>UTTypeConformsTo</key>
+        <array>
+          <string>public.image</string>
+        </array>
+        <key>UTTypeDescription</key>
+        <string>HEIC Image</string>
+        <key>UTTypeTagSpecification</key>
+        <dict>
+          <key>public.filename-extension</key>
+          <array>
+            <string>heic</string>
+          </array>
+          <key>public.mime-type</key>
+          <array>
+            <string>image/heic</string>
+          </array>
+        </dict>
+      </dict>
+      <dict>
+        <key>UTTypeIdentifier</key>
+        <string>com.bacon.jun8.avif</string>
+        <key>UTTypeConformsTo</key>
+        <array>
+          <string>public.image</string>
+        </array>
+        <key>UTTypeDescription</key>
+        <string>AVIF Image</string>
+        <key>UTTypeTagSpecification</key>
+        <dict>
+          <key>public.filename-extension</key>
+          <array>
+            <string>avif</string>
+          </array>
+          <key>public.mime-type</key>
+          <array>
+            <string>image/avif</string>
+          </array>
+        </dict>
+      </dict>
+    </array>
+    <key>UTImportedTypeDeclarations</key>
+    <array>
+      <dict>
+        <key>UTTypeConformsTo</key>
+        <array>
+          <string>public.movie</string>
+        </array>
+        <key>UTTypeDescription</key>
+        <string>Video files</string>
+        <key>UTTypeIcons</key>
+        <dict/>
+        <key>UTTypeIdentifier</key>
+        <string>public.mpeg-4</string>
+        <key>UTTypeTagSpecification</key>
+        <dict>
+          <key>public.filename-extension</key>
+          <array>
+            <string>mp4</string>
           </array>
         </dict>
       </dict>

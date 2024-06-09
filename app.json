@@ -4,7 +4,7 @@
     "slug": "jun8",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "https://icogen.vercel.app/api/icon?icon=🧭",
+    "icon": "https://icogen.vercel.app/api/icon?icon=%F0%9F%A7%AD&color=dodgerblue",
     "scheme": "native-intent",
     "userInterfaceStyle": "automatic",
     "splash": {
@@ -14,10 +14,6 @@
     },
     "ios": {
       "supportsTablet": true,
-      "infoPlist": {
-        "NSPhotoLibraryUsageDescription": "Allow $(PRODUCT_NAME) to access your photos",
-        "UIBackgroundModes": ["audio"]
-      },
       "bundleIdentifier": "com.bacon.jun8"
     },
     "android": {
@@ -31,7 +27,7 @@
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
-    "plugins": ["expo-router", "./withVideoImport.js"],
+    "plugins": ["expo-router", "./withImageImport.js"],
     "experiments": {
       "typedRoutes": true
     }
