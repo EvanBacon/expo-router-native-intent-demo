@@ -39,3 +39,7 @@ The can only be one `+native-intent` file in your project and it must be in the 
 `+native-intent` has no effect on web projects as it's only triggered by the native intent APIs for iOS and Android. Websites can only be launched using standard URLs that conform to the server that's hosting them.
 
 > `+native-intent.ts` was first introduced in Expo Router v3.5 with Expo SDK 51.
+
+## Config Plugin
+
+This project has a basic Expo Config Plugin `withImageImport.js` which adds the expected iOS `Info.plist` key to enable the app to be launched from the "Share" button. This is a common use-case for apps that want to be able to handle images from the Photos app.
