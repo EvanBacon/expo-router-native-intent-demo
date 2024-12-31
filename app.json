@@ -13,6 +13,7 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
+      "appleTeamId": "QQ57RJ5UTD",
       "supportsTablet": true,
       "bundleIdentifier": "com.bacon.jun8"
     },

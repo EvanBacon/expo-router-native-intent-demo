@@ -9,7 +9,7 @@ export async function redirectSystemPath({
 
   if (path.startsWith("file://")) {
     // Remap `file://` to be a query param and send to the route which can handle it.
-    return "/modal?file=" + encodeURIComponent(path);
+    return "/modal?file=" + path;
   }
 
   return path;

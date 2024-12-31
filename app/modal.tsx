@@ -1,6 +1,8 @@
 import { useLocalSearchParams } from "expo-router";
 import { Image, Text, View, StyleSheet } from "react-native";
 
+// import "lodash";
+
 export default function ModalScreen() {
   const { file } = useLocalSearchParams();
   console.log("file", file);

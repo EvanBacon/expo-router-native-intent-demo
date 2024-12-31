@@ -1,5 +1,6 @@
 import { Text, View, Share, Image, StyleSheet } from "react-native";
 
+// @ts-expect-error
 import TouchableBounce from "react-native/Libraries/Components/Touchable/TouchableBounce";
 
 import { Asset } from "expo-asset";
@@ -24,6 +25,7 @@ export default function TabOneScreen() {
       </Text>
       <TouchableBounce
         onPress={async () => {
+          // throw new Error("hey");
           Share.share({
             url: (await Asset.fromModule(DEMO_IMAGE).downloadAsync()).localUri!,
           });
