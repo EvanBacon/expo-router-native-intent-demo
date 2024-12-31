@@ -4,7 +4,7 @@
     "slug": "jun8",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "https://icogen.vercel.app/api/icon?icon=%F0%9F%A7%AD&color=dodgerblue",
+    "icon": "https://github.com/expo.png",
     "scheme": "native-intent",
     "userInterfaceStyle": "automatic",
     "splash": {
@@ -28,6 +28,6 @@
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
-    "plugins": ["./withImageImport.js"]
+    "plugins": ["./withImageImport.js", "expo-font", "expo-router"]
   }
 }

@@ -56,7 +56,7 @@ const withImageImportSupport = (config) => {
 
     const includesEverything = {
       CFBundleDocumentTypes: [
-        ...(config.modResults.CFBundleDocumentTypes || {}).filter((item) => {
+        ...(config.modResults.CFBundleDocumentTypes || []).filter((item) => {
           const isMatching =
             item.CFBundleTypeName === "Image" &&
             item.CFBundleTypeName.LSHandlerRank === "Owner" &&
@@ -79,7 +79,7 @@ const withImageImportSupport = (config) => {
         },
       ],
       UTExportedTypeDeclarations: [
-        ...(config.modResults.UTExportedTypeDeclarations || {}).filter(
+        ...(config.modResults.UTExportedTypeDeclarations || []).filter(
           // Remove duplicates
           (declaration) =>
             nextUtiExportedTypeDeclarationsIdentifiers.includes(
